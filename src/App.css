@@ -1,5 +1,5 @@
 .app {
-  background-color: rgba(187, 112, 74, 0.5);
+  background-color: rgba(187, 112, 74, 0.3);
   height: fit-content;
   max-width: 700px;
 }
@@ -24,8 +24,7 @@
 
 .image {
   width: 230px;
-  border: 2px solid black;
-  outline: 3px solid #683832;
+  border: 3px solid #683832;
   border-radius: 50%;
   position: relative;
   top: -6rem;
