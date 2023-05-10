@@ -1,7 +1,7 @@
 .app {
   background-color: rgba(187, 112, 74, 0.3);
   height: fit-content;
-  max-width: 700px;
+  max-width: 600px;
 }
 
 .cover {
@@ -12,7 +12,9 @@
 
 .avatarSection {
   height: 25rem;
-  background-color: #ae8a70;
+  background-color: #3e2c2a;
+  display: flex;
+  flex-direction: column;
 }
 .backPic {
   height: 12rem;
@@ -22,13 +24,44 @@
   background-size: 100% 100%;
 }
 
+.Mainavatarsection {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.8rem;
+  margin-top: -8rem;
+}
+
 .image {
   width: 230px;
   border: 3px solid #683832;
   border-radius: 50%;
   position: relative;
-  top: -6rem;
+  top: -8rem;
   left: 2rem;
+}
+
+.name {
+  margin-top: -6rem;
+}
+
+.Buttonwrap {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 0.5rem;
+}
+
+button {
+  background-color: gold;
+  width: 10rem;
+  padding: 0.4rem 0;
+}
+
+.lastbtn {
+  width: fit-content;
+  border: 1px solid gold;
+  font-size: 22px;
+  color: gold;
+  padding: 0 1rem;
 }
 
 img {
@@ -40,4 +73,18 @@ main {
   width: 100%;
   padding: 1rem;
   text-align: justify;
+}
+
+h1 {
+  color: #f3903e;
+  font-size: 20px;
+}
+
+p {
+  color: gold;
+}
+
+.additionalSkills {
+  color: goldenrod;
+  font-size: 18px;
 }

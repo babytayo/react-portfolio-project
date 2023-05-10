@@ -2,9 +2,9 @@ function Main() {
   return (
     <main>
       <div className="about">
-        <h2>
+        <h1>
           <b>About</b>
-        </h2>
+        </h1>
         <p>
           I'm Oguneko Omotayo John by Name. A certified Electrical technician,
           and a Website developer. I'm currently a 400L student of Psychology
@@ -12,30 +12,40 @@ function Main() {
         </p>
       </div>
       <div className="interest">
-        <h2>
+        <h1>
+          <br />
+
           <b>Interests</b>
-        </h2>
+        </h1>
         <p>Reading, Playing chess, traveling, and coding.</p>
       </div>
+      <br />
       <div className="stack">
-        <h2>
+        <h1>
           <b>Stacks</b>
-        </h2>
+        </h1>
         <p>
-          <b>HTML:</b>
+          <b>HTML5: </b>
           HTML, or Hypertext Markup Language, is a markup language for the web
-          that defines the structure of web pages. <br />
+          that defines the structure of web pages.
           <br />
-          <b>CSS:</b>
+          <br />
+          <b>CSS3: </b>
           Stands for "Cascading Style Sheet." CSS is a style sheet language used
           for formatting content in HTML webpages.
           <br />
-          <b>JavaScript:</b>
+          <br />
+          <b>JavaScript: </b>
           Javascript (JS) is a scripting languages, primarily used on the Web.
           It is used to enhance HTML pages and is commonly found embedded in
           HTML code.
         </p>
-        <h4> Git | Netlify | Sass | Bootstrap</h4>
+        <br />
+        <br />
+
+        <p className="additionalSkills">
+          Git | Netlify | Sass | Bootstrap | Tailwind
+        </p>
       </div>
     </main>
   );

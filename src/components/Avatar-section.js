@@ -13,6 +13,21 @@ function Avatar() {
       <div className="image">
         <Omotayo />
       </div>
+      <Mainavatarsection />
+    </div>
+  );
+}
+
+function Mainavatarsection() {
+  return (
+    <div className="Mainavatarsection">
+      <h1>Oguneko Omotayo John</h1>
+      <p>Front-End Developer</p>
+      <div className="Buttonwrap">
+        <button>Email</button>
+        <button>Linkedin</button>
+        <div className="lastbtn">...</div>
+      </div>
     </div>
   );
 }
