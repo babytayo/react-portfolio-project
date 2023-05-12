@@ -1,15 +1,12 @@
-function Main() {
+export default function Main(props) {
+  console.log(props);
   return (
     <main>
       <div className="about">
         <h1>
           <b>About</b>
         </h1>
-        <p>
-          I'm Oguneko Omotayo John by Name. A certified Electrical technician,
-          and a Website developer. I'm currently a 400L student of Psychology
-          studying at the Nigerian Army university Biu, borno state.
-        </p>
+        <p>{props.about}</p>
       </div>
       <div className="interest">
         <h1>
@@ -25,7 +22,7 @@ function Main() {
           <b>Stacks</b>
         </h1>
         <p>
-          <b>HTML5: </b>
+          <b>HTML5 : </b>
           HTML, or Hypertext Markup Language, is a markup language for the web
           that defines the structure of web pages.
           <br />
@@ -50,5 +47,3 @@ function Main() {
     </main>
   );
 }
-
-export default Main;
