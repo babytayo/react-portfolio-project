@@ -9,9 +9,10 @@ export default function Footer() {
   const facebookLink = () =>
     (window.location.href = "https://www.facebook.com/oguneko-omotayo");
   const githubLink = () =>
-    (window.location.href = "https://www.instagram.com/cmr_babytayo/");
-  const instagramLink = () =>
     (window.location.href = "https://github.com/babytayo?tab=repositories");
+
+  const instagramLink = () =>
+    (window.location.href = "https://www.instagram.com/cmr_babytayo/");
 
   return (
     <footer>
