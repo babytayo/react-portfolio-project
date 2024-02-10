@@ -8,10 +8,13 @@ module.exports = {
 				overallBgImg: "url('././components/images/backoo.jpeg')",
 			},
 			colors: {
-				overBgOpacity: "rgba(114,49,49,0.8)",
 				brown: "rgb(114,49,49)",
-				veryLightcream: "#c3a36a",
-				overBgOpacity2: "rgba(195, 163, 106, 0.7)",
+				veryLightcream: "#e7d5a3",
+				overBgOpacity: "rgba(195, 163, 106, 0.9)",
+				orangeLike: "#f3903e",
+				goldencream: "#c99853",
+				iconsColor: "#b2714b",
+				gold: "goldenrod",
 			},
 			height: {
 				"3/3": "90vh",

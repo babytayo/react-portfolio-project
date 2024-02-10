@@ -1,8 +1,7 @@
 import omotayopic from "./images/omotayopic.jpg";
-import linkedinicon from "./icons/icons8linkedin30.png";
-import emailicon from "./icons/icons8email30.png";
+import { Icons } from "./IconSection";
 
-export default function Avatar() {
+export default function avatarSection() {
 	return (
 		<div className=" w-full md:w-2/3 grid grid-cols-1 i justify-center mx-auto md:h-full bg-veryLightcream">
 			<div>
@@ -18,6 +17,7 @@ export default function Avatar() {
 					stack="Front-End Developer"
 				/>
 			</div>
+			<Icons />
 		</div>
 	);
 }
@@ -34,16 +34,29 @@ function Mainavatarsection(props) {
 
 	return (
 		<div className=" pt-20 pl-2">
-			<h1>{props.name}</h1>
-			<p>{props.stack}</p>
-			<div className="flex py-5 ">
-				<button onClick={emailClickHandler} className="profile_btn mr-3">
-					<img className="w-5" src={emailicon} alt="icon" /> Email
+			<h1 className="text-xl text-orange-600 font-semibold">{props.name}</h1>
+			<p className=" text-gold font-semibold">{props.stack}</p>
+			<div className="flex py-5  ">
+				<button
+					onClick={emailClickHandler}
+					className="profile_btn bg-goldencream text-veryLightcream  mr-3"
+				>
+					<i
+						className="fas fa-envelope text-sm mr-1 text-orange-600"
+						aria-hidden="true"
+					></i>
+					Email
 				</button>
-				<button onClick={linkedinClickHandler} className="profile_btn mr-3">
-					<img className=" w-5" src={linkedinicon} alt="icon" /> Linkedin
+				<button
+					onClick={linkedinClickHandler}
+					className="profile_btn border-2 border-goldencream text-goldencream mr-3"
+				>
+					<i
+						className="fab fa-linkedin text-sm mr-1 text-orange-600"
+						aria-hidden="true"
+					></i>
+					Linkedin
 				</button>
-				<div className="p-1">...</div>
 			</div>
 		</div>
 	);

@@ -1,26 +1,16 @@
-import Footer from "./Footer";
-
-export default function Main(props) {
+export const Main = (props) => {
 	console.log(props);
 	return (
-		<main>
+		<main className="grid px-2 py-4 md:py-2 md:p-4 lg:p-8 text-sm text-justify">
 			<div className="about">
-				<h1>
+				<h1 className=" leadStyle">
 					<b>About</b>
 				</h1>
 				<p>{props.about}</p>
 			</div>
-			<div className="interest">
-				<h1>
-					<br />
 
-					<b>Interests</b>
-				</h1>
-				<p>Reading, Playing chess, traveling, and coding.</p>
-			</div>
-			<br />
 			<div className="stack">
-				<h1>
+				<h1 className="leadStyle ">
 					<b>Stacks</b>
 				</h1>
 				<p>
@@ -41,12 +31,22 @@ export default function Main(props) {
 				</p>
 				<br />
 				<br />
-
-				<p className="additionalSkills">
-					Git | Netlify | Sass | Bootstrap | Tailwind
-				</p>
 			</div>
-			<Footer />
+			<div className="mb-5 md:mb-3 lg:mb-7">
+				<h1 className="leadStyle p-0">
+					<br />
+
+					<b>Interests</b>
+				</h1>
+				<p>Reading, Playing chess, traveling, and coding.</p>
+			</div>
+			<footer className=" font-bold text-veryLightcream">
+				Git <span className=" text-orange-600 font-extrabold"> | </span>Netlify
+				<span className=" text-orange-600 font-extrabold"> | </span>Sass
+				<span className=" text-orange-600 font-extrabold"> | </span>
+				Tailwind
+				<span className=" text-orange-600 font-extrabold"> | </span> Reactjs
+			</footer>
 		</main>
 	);
-}
+};
